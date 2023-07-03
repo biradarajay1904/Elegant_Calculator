@@ -10,7 +10,7 @@ pipeline {
         
         stage('Build') {
             steps {
-                bat 'C:\\Ruby\\bin\\fastlane.bat build'
+                bat 'C:\tools\ruby31\bin\fastlane.bat build'
             }
         }
         
