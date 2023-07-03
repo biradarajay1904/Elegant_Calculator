@@ -10,22 +10,24 @@ pipeline {
         
         stage('Build') {
             steps {
-                bat 'C:\tools\ruby31\bin\fastlane.bat build'
+                bat 'fastlane build'
             }
         }
         
-        // Uncomment and replace the bat commands for other stages if needed
+        // Uncomment and add more stages for other lanes if needed
         
+        /*
         stage('Beta') {
             steps {
-                bat 'C:\\Ruby\\bin\\fastlane.bat beta'
+                bat 'fastlane beta'
             }
         }
         
         stage('Deploy') {
             steps {
-                bat 'C:\\Ruby\\bin\\fastlane.bat deploy'
+                bat 'fastlane deploy'
             }
         }
+        */
     }
 }
