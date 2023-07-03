@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'fastlane build'
+                bat 'fastlane build'
             }
         }
         
@@ -12,13 +12,13 @@ pipeline {
         /*
         stage('Beta') {
             steps {
-                sh 'fastlane beta'
+                bat 'fastlane beta'
             }
         }
         
         stage('Deploy') {
             steps {
-                sh 'fastlane deploy'
+                bat 'fastlane deploy'
             }
         }
         */
