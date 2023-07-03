@@ -10,7 +10,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        bat 'fastlane build'
+        bat 'C:\Users\Betaflux\Elegant_Calculator\fastlane\fastlane build'
       }
     }
   }
